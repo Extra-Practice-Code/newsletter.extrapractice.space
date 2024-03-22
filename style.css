@@ -8,6 +8,19 @@ body {
   font-size: 18px;
   letter-spacing: 0.02em;
   font-weight: normal;
+  padding:0;
+}
+
+.main{
+  /* position:absolute; */
+  display: block;
+  margin: 0;
+  top:0;
+  min-height: 100vh;
+  margin-bottom:-100px;
+  width: 100vw;
+  background-color: lightskyblue;
+
 }
 
 :root{
@@ -28,8 +41,8 @@ p {
 }
 
 header {
-  margin: 20px;
-  margin-bottom: 0px;
+  margin: 0px 20px;
+  padding-top: 20px;
 }
 
 a, a::after {
@@ -48,9 +61,11 @@ small {
 footer {
   border-top: 1px dashed #000;
   padding: 20px;
-  background-color: var(--xpgreen);
+  /* background-color: var(--xpgreen); */
+  background-color: gold;
   height: 50px;
   margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .grid-2 {
