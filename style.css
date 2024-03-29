@@ -74,7 +74,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   margin: 10px;
   margin-bottom: -10px;
-  height: calc(75vw);
+  height: calc(75vh);
 }
 
 .grid-3 {
