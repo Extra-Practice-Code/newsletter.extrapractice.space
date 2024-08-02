@@ -3,11 +3,24 @@ body {
   height: 100vh;
   width: 100vw;
   color: #000;
-  background-color: lightskyblue;
+  background-color: floralwhite;
   font-family: "Arial Narrow";
   font-size: 18px;
   letter-spacing: 0.02em;
   font-weight: normal;
+  padding:0;
+}
+
+.main{
+  /* position:absolute; */
+  display: block;
+  margin: 0;
+  padding-bottom: 20px;
+  top:0;
+  min-height: 90vh;
+  width: 100vw;
+  background-color: gold;
+
 }
 
 :root{
@@ -23,13 +36,34 @@ h1, h2 {
   display:inline-block;
 }
 
+h2 {
+    font-weight: bold;
+    display: block;
+    border-bottom: 1px solid #00000042;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.block a {
+    text-decoration: none;
+}
+.block a:hover {
+    text-decoration: none;
+}
+
+hr {
+
+    border: 1px solid #000;
+    margin: 25px 0;
+}
+
 p {
   margin: 0;
 }
 
 header {
-  margin: 20px;
-  margin-bottom: 0px;
+  margin: 0px 20px;
+  padding-top: 20px;
 }
 
 a, a::after {
@@ -48,9 +82,12 @@ small {
 footer {
   border-top: 1px dashed #000;
   padding: 20px;
-  background-color: var(--xpgreen);
-  height: 50px;
-  margin-top: 20px;
+  /* background-color: var(--xpgreen); */
+  background-color: #00943f;
+  height: 5vh;
+  /* min-height: 50px; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 50px; */
 }
 
 .grid-2 {
@@ -58,7 +95,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   margin: 10px;
   margin-bottom: -10px;
-  height: calc(45vw);
+  height: calc(75vh);
 }
 
 .grid-3 {
@@ -181,11 +218,11 @@ src: url("fonts/AUTHENTICSans-Condensed-90.otf");}
 
 @font-face {
 font-family: "Arial Narrow";
-src: url("fonts/Arial Narrow.ttf");
+src: url("fonts/ArialNarrow.ttf");
 }
 
 /* BUTTON */
-#copy-btn {
+button {
   padding: 15px;
   cursor: pointer;
   margin: 1em auto;
@@ -195,8 +232,9 @@ src: url("fonts/Arial Narrow.ttf");
   border-radius: 10px;
   font-family: inherit;
   font-size: 1em;
+  color: inherit;
 }
-#copy-btn:hover{
+button:hover{
   background-color: lightgoldenrodyellow;
   cursor:pointer;
 }
